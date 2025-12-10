@@ -16,6 +16,7 @@ const updateSideNav = index => {
   sideNavItems.forEach((item, i) => {
     item.classList.toggle('active', i === index);
   });
+  document.body.classList.toggle('hero-active', index === 0);
 };
 
 const fadeToPanel = targetIndex => {

@@ -11,38 +11,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="side-nav">
-    <ul>
-      <li data-index="0" class="side-nav-item active">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Hero</span>
-      </li>
-      <li data-index="1" class="side-nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">About</span>
-      </li>
-      <li data-index="2" class="side-nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Project</span>
-      </li>
-      <li data-index="3" class="side-nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Skills</span>
-      </li>
-      <li data-index="4" class="side-nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Experience</span>
-      </li>
-      <li data-index="5" class="side-nav-item">
-        <span class="nav-dot"></span>
-        <span class="nav-label">Contact</span>
-      </li>
-    </ul>
-  </nav>
+  <div class="layout">
+    <nav class="side-nav">
+      <ul>
+        <li data-index="0" class="side-nav-item active">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Home</span>
+        </li>
+        <li data-index="1" class="side-nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">About</span>
+        </li>
+        <li data-index="2" class="side-nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Project</span>
+        </li>
+        <li data-index="3" class="side-nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Skills</span>
+        </li>
+        <li data-index="4" class="side-nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Experience</span>
+        </li>
+        <li data-index="5" class="side-nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Contact</span>
+        </li>
+      </ul>
+    </nav>
 
-  <div id="snap-container" class="snap-container">
-    <section class="hero panel active" id="hero">
-      <div class="panel-content hero-content">
+    <div id="snap-container" class="snap-container">
+      <section class="hero panel active" id="hero">
+        <div class="panel-content hero-content">
         <p class="intro">안녕하세요, 손용훈입니다.</p>
         <h1>“AI 기반 백엔드 주니어 개발자”</h1>
         <p class="sub-copy">“STT, RAG, 자동 요약, 마인드맵 기반 AI 서비스를 직접 구현합니다.”</p>
@@ -204,6 +205,7 @@
         <p class="footer-note">&copy; <span id="year"></span> Son Yonghun. All rights reserved.</p>
       </div>
     </section>
+  </div>
   </div>
 
   <script src="script.js"></script>
