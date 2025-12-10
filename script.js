@@ -6,6 +6,8 @@ const MIN_SWIPE_DISTANCE = 40;
 let currentIndex = 0;
 let isLocked = false;
 let touchStartY = null;
+let lastWheelTime = 0;
+const WHEEL_COOLDOWN = 800;
 
 const clampIndex = index => Math.min(Math.max(index, 0), panels.length - 1);
 
@@ -60,6 +62,13 @@ const attemptDirectionMove = direction => {
 const wheelHandler = event => {
   if (!panels.length) return;
   event.preventDefault();
+
+  const now = Date.now();
+  if (now - lastWheelTime < WHEEL_COOLDOWN) {
+    return;
+  }
+  lastWheelTime = now;
+
   if (isLocked) return;
   const direction = Math.sign(event.deltaY);
   if (direction === 0) return;
