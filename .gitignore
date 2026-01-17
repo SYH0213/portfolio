@@ -1,0 +1,8 @@
+# Ignore everything by default.
+*
+
+# Allow only the deployed static files and this ignore file.
+!.gitignore
+!index.html
+!script.js
+!styles.css
